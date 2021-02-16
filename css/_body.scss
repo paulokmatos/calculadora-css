@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091923;
+
+    &::before{
+        @include bg-circle-size();
+        background: linear-gradient(#00A2DF, #00dfad);
+        clip-path: circle(22% at 30% 20%);
+    }
+
+    &::after{
+        @include bg-circle-size();
+        background: linear-gradient(#32df00, #A2DF00);
+        clip-path: circle(22% at 70% 90%);
+    }
+}
